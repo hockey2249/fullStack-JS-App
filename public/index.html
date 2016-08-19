@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="CardsAgainstAssembly">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cards Against Assembly™</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/cardsController.js"></script>
+        <script src="scripts/cardDirective.js"></script>
+    </head>
+    <body>
+
+      <div class="container">
+        <header class="navbar">
+          <h1 class="pull-left">Cards Against Assembly</h1>
+           <scores></scores>
+        </header>
+      <div ng-view>  </div>
+      
+      <footer>
+        <p>Made with <span class="heart">♥︎</span> at General Assembly</p>
+      </footer>
+      
+      </div>
+    
+    </body>
+</html>
