@@ -21,7 +21,13 @@
           <h1 class="pull-left">Cards Against Assembly</h1>
            <scores></scores>
         </header>
-      <div ng-view>  </div>
+      <div ng-view> </div>
+
+    <form ng-submit="submit()" ng-controller="CardCreateCtrl">
+        <input type="text" ng-model="newCard.question" placeholder="Question" />
+        <input type="text" ng-model="newCard.answer" placeholder="Answer" />
+        <input type="submit" id="submit" value="Submit" />
+    </form>
       
       <footer>
         <p>Made with <span class="heart">♥︎</span> at General Assembly</p>
